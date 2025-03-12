@@ -28,7 +28,7 @@ export function Hero() {
 
 					<div className="flex flex-wrap gap-3 mt-4">
 						<Button asChild size="responsive">
-							<Link href="#">
+							<Link href="#contact">
 								<FaArrowAltCircleDown />
 								Contact
 							</Link>
@@ -42,7 +42,7 @@ export function Hero() {
 						</Button>
 
 						<SocialIcon href="#" icon={<FaLinkedinIn />} />
-						<SocialIcon href="#" icon={<FaGithub />} />
+						<SocialIcon href="https://github.com/thibault-deverge" icon={<FaGithub />} />
 					</div>
 				</div>
 

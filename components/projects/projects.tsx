@@ -7,7 +7,10 @@ import { projects, ProjectType } from "@/data/projects";
 export function Projects() {
 	return (
 		<>
-			<section className="container mx-auto px-4 py-16 flex flex-col items-start">
+			<section
+				id="projects"
+				className="container mx-auto px-4 py-16 flex flex-col items-start"
+			>
 				<Heading2>Featured Projects</Heading2>
 
 				{projects.map((project: ProjectType) => {

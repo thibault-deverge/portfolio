@@ -1,13 +1,10 @@
-import {
-	Sheet,
-	SheetContent,
-	SheetHeader,
-	SheetTitle,
-	SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/navbar/logo";
-import { Navlink } from "./navlink";
+import { Navlink } from "@/components/navbar/navlink";
+import { SheetLink } from "@/components/navbar/sheetLink";
+
 import { RxHamburgerMenu } from "react-icons/rx";
+import { XIcon } from "lucide-react";
 
 export function Navbar() {
 	return (
@@ -18,10 +15,9 @@ export function Navbar() {
 
 				{/* Right side : Desktop nav */}
 				<div className="hidden md:flex gap-6 font-semibold letter-spacing-lg mt-3 md:mt-0 md:mr-3">
-					<Navlink href="#home">Home</Navlink>
+					<Navlink href="#project">Projects</Navlink>
 					<Navlink href="#about">About</Navlink>
-					<Navlink href="#experiences">Experiences</Navlink>
-					<Navlink href="#projects">Projects</Navlink>
+					<Navlink href="#contact">Contact</Navlink>
 				</div>
 
 				{/* Right side: Hamburger menu */}
@@ -30,15 +26,26 @@ export function Navbar() {
 						<SheetTrigger>
 							<RxHamburgerMenu size={24} />
 						</SheetTrigger>
-						<SheetContent side="top">
-							<SheetHeader>
-								<SheetTitle>Menu</SheetTitle>
-							</SheetHeader>
+						<SheetContent
+							side="left"
+							className=" w-full h-fit mt-18 bg-neutral-900 opacity-90"
+						>
+							<SheetClose className="absolute top-4 right-4 bg-neutral-100 text-neutral-900 hover:bg-neutral-200 p-2 rounded-full">
+								{/* You can use your preferred icon for the close button */}
+								<XIcon size={20} />
+							</SheetClose>
 							<div className="flex flex-col gap-4 font-semibold letter-spacing-lg">
-								<Navlink href="#home">Home</Navlink>
-								<Navlink href="#about">About</Navlink>
-								<Navlink href="#experiences">Experiences</Navlink>
-								<Navlink href="#projects">Projects</Navlink>
+								<SheetClose asChild>
+									<SheetLink href="#projects">Projects</SheetLink>
+								</SheetClose>
+								<SheetClose asChild>
+									<SheetLink href="#about">About</SheetLink>
+								</SheetClose>
+								<SheetClose asChild>
+									<SheetLink href="#contact" last>
+										Contact
+									</SheetLink>
+								</SheetClose>
 							</div>
 						</SheetContent>
 					</Sheet>

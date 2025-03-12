@@ -19,7 +19,7 @@ export const projects = [
 		mediaType: "image" as const,
 		mediaUrl: "/images/ft_pong.png",
 		domain: "Fullstack Web Development",
-		techStack: "Django/Django REST, HTML/CSS/JS, Docker, Nginx",
+		techStack: "Django, HTML/CSS/JS, Docker, Nginx",
 		githubUrl: "https://github.com/thibault-deverge/42-Cursus__Ft-Transcendence",
 		demoUrl: "https://ft-transcendence.pro/dashboard",
 	},

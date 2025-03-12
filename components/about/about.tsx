@@ -5,7 +5,10 @@ import { Separator } from "@/components/ui/separator";
 export function About() {
 	return (
 		<>
-			<section className="container flex flex-col items-stretch justify-between md:flex-row mx-auto px-4 py-16">
+			<section
+				id="about"
+				className="container flex flex-col items-stretch justify-between md:flex-row mx-auto px-4 py-16"
+			>
 				<Heading2>About Me</Heading2>
 
 				<div className="w-full md:w-2/3 flex flex-col gap-6">

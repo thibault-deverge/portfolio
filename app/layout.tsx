@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Manrope } from "next/font/google";
 
 import { Navbar } from "@/components/navbar/navbar";
+import { Footer } from "@/components/footer/footer";
+import { ScrollToTopBtn } from "@/components/ui/scrollToTopBtn";
 import "./globals.css";
 
 /*
@@ -49,6 +51,8 @@ export default function RootLayout({
 			<body className="bg-neutral-900">
 				<Navbar />
 				{children}
+				<Footer />
+				<ScrollToTopBtn />
 			</body>
 		</html>
 	);

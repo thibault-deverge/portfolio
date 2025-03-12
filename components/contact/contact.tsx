@@ -1,10 +1,13 @@
+import { useTranslations } from "next-intl";
+
 import { ContactForm } from "@/components/contact/contactForm";
 import { Heading2 } from "@/components/ui/heading";
 import { SocialIcon } from "@/components/ui/socialIcon";
-
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export function Contact() {
+	const t = useTranslations("Contact");
+
 	return (
 		<section
 			id="contact"
@@ -12,10 +15,10 @@ export function Contact() {
 		>
 			{/* Left Panel - Informations*/}
 			<div className="w-full lg:w-1/3 flex flex-col gap-2">
-				<Heading2>Let&apos;s Connect</Heading2>
+				<Heading2>{t("title")}</Heading2>
 
 				<p className="text-neutral-100">
-					Say hello at{" "}
+					{t("email_info")}{" "}
 					<a
 						href="mailto:thibault.deverge@gmail.com"
 						className="text-white border-b border-accent hover:text-lime-400"
@@ -25,13 +28,13 @@ export function Contact() {
 				</p>
 
 				<p className="text-neutral-100 mb-4">
-					For more info, here&apos;s my{" "}
+					{t("more_info")}{" "}
 					<a
 						href="#"
 						download
 						className="text-white border-b border-accent hover:text-lime-400"
 					>
-						resume
+						{t("resume")}
 					</a>
 				</p>
 

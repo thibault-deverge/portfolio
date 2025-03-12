@@ -25,7 +25,7 @@ export function InputForm({ type, name, label, placeholder }: InputTextProps) {
 			) : (
 				<textarea
 					name="message"
-					placeholder="Write your message"
+					placeholder={placeholder}
 					required
 					className="min-h-36 bg-neutral-800 text-neutral-100 px-4 py-[10px] rounded-md placeholder:text-neutral-400 hover:placeholder:text-neutral-100"
 				/>

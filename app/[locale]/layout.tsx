@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { NextIntlClientProvider, Locale, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Manrope } from "next/font/google";
 
@@ -41,18 +44,27 @@ export const metadata: Metadata = {
 /*
  ***** RootLayout *****
  */
-export default function RootLayout({
+export default async function RootLayout({
 	children,
+	params,
 }: Readonly<{
 	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }>) {
+	const { locale } = await params;
+	if (!hasLocale(routing.locales, locale)) {
+		notFound();
+	}
+
 	return (
 		<html lang="en" className={`${inter.className} ${bebasNeue.className}`}>
 			<body className="bg-neutral-900">
-				<Navbar />
-				{children}
-				<Footer />
-				<ScrollToTopBtn />
+				<NextIntlClientProvider>
+					<Navbar />
+					{children}
+					<Footer />
+					<ScrollToTopBtn />
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

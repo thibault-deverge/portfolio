@@ -1,0 +1,27 @@
+{
+	"Navbar": {
+		"project": "Projets",
+		"about": "A propos"
+	},
+	"Hero": {
+		"title1": "Salut, je suis",
+		"description": "Basé en France, je suis un développeur fullstack dédié à créer des applications web robustes et innovantes, offrant la meilleure expérience utilisateur possible.",
+		"CV": "Télécharger CV"
+	},
+	"Projects": {
+		"title": "Projets Phares",
+		"info_title": "Infos clés",
+		"domain": "Domaine"
+	},
+	"Contact": {
+		"title": "Restons connectés",
+		"email_info": "Envoyez un message à",
+		"more_info": "Pour plus d'infos, consultez mon",
+		"resume": "CV",
+		"submit": "Envoyer"
+	},
+	"Footer": {
+		"portfolio": "Portfolio disponible ",
+		"link": "ici"
+	}
+}

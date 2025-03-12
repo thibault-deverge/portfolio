@@ -1,33 +1,32 @@
 import Image from "next/image";
+import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 import { Separator } from "@/components/ui/separator";
 import { Heading3 } from "@/components/ui/heading";
+import { ProjectType } from "@/data/projects";
 
 import { FaGithub } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { StyledLink } from "../ui/styledLink";
 
-interface ProjectCardProps {
-	title: string;
-	description: string;
-	mediaType: "image" | "video";
-	mediaUrl: string;
-	domain: string;
-	techStack: string;
-	githubUrl: string;
-	demoUrl: string;
-}
-
 export function ProjectCard({
-	title,
-	description,
+	title_en,
+	title_fr,
+	description_en,
+	description_fr,
 	mediaType,
 	mediaUrl,
-	domain,
+	domain_en,
+	domain_fr,
 	techStack,
 	githubUrl,
 	demoUrl,
-}: ProjectCardProps) {
+}: ProjectType) {
+	const t = useTranslations("Projects");
+	const locale = useLocale();
+	const isEnglish = locale === "en";
+
 	return (
 		<article className="flex flex-col md:flex-row md:justify-between gap-10 items-center mt-16">
 			<div className="w-full md:w-1/3 max-w-[600px] max-h-[600px] overflow-hidden rounded-md">
@@ -43,7 +42,7 @@ export function ProjectCard({
 				) : (
 					<Image
 						src={mediaUrl}
-						alt={`image of ${title}`}
+						alt={`image of ${title_en}`}
 						width={0}
 						height={0}
 						sizes="(max-width: 768px) 100vw, 50vw"
@@ -54,16 +53,16 @@ export function ProjectCard({
 			</div>
 
 			<div className="flex flex-col gap-4 md:w-2/3 text-neutral-50">
-				<Heading3>{title}</Heading3>
-				<p className="text-md">{description}</p>
+				<Heading3>{isEnglish ? title_en : title_fr}</Heading3>
+				<p className="text-md">{isEnglish ? description_en : description_fr}</p>
 
 				<div className="flex flex-col gap-4 mt-4">
-					<h4 className="font-manrope uppercase font-bold text-md">Project Info</h4>
+					<h4 className="font-manrope uppercase font-bold text-md">{t("info_title")}</h4>
 					<Separator />
 
 					<div className="flex justify-between">
-						<p className="font-bold">Domain</p>
-						<p>{domain}</p>
+						<p className="font-bold">{t("domain")}</p>
+						<p>{isEnglish ? domain_en : domain_fr}</p>
 					</div>
 					<Separator />
 

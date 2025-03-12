@@ -1,0 +1,28 @@
+{
+	"Navbar": {
+		"project": "Projects",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"Hero": {
+		"title1": "Hi, I am",
+		"description": "Based in France, I'm a fullstack developer dedicated to building robust, innovative web applications that deliver seamless user experiences.",
+		"CV": "Download CV"
+	},
+	"Projects": {
+		"title": "Featured Projects",
+		"info_title": "Project Info",
+		"domain": "Domain"
+	},
+	"Contact": {
+		"title": "Let's Connect",
+		"email_info": "Say hello at",
+		"more_info": "For more info, here's my",
+		"resume": "resume",
+		"submit": "Send Message"
+	},
+	"Footer": {
+		"portfolio": "portfolio available ",
+		"link": "here"
+	}
+}

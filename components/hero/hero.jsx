@@ -54,7 +54,7 @@ export function Hero() {
 
 				{/* Right Panel */}
 				<div className="flex flex-cols rounded-md overflow-hidden">
-					<Image src="/images/hero.png" alt="Thibault Deverge" width={700} height={700} />
+					<Image src="/images/hero.png" alt="Thibault Deverge" width={650} height={650} />
 				</div>
 			</section>
 			<Separator />

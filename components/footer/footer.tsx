@@ -15,7 +15,7 @@ export function Footer() {
 				>
 					{t("link")}
 				</a>{" "}
-				(Next.Js/Typescript)
+				(Next.Js/Typescript/Tailwind)
 			</p>
 		</footer>
 	);

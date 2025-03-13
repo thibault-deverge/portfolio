@@ -17,7 +17,7 @@ export function Contact() {
 			<div className="w-full lg:w-1/3 flex flex-col gap-2">
 				<Heading2>{t("title")}</Heading2>
 
-				<p className="text-neutral-100">
+				<p>
 					{t("email_info")}{" "}
 					<a
 						href="mailto:thibault.deverge@gmail.com"
@@ -27,7 +27,7 @@ export function Contact() {
 					</a>
 				</p>
 
-				<p className="text-neutral-100 mb-4">
+				<p className=" mb-4">
 					{t("more_info")}{" "}
 					<a
 						href="#"

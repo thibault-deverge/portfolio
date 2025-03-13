@@ -4,9 +4,9 @@ export function Footer() {
 	const t = useTranslations("Footer");
 
 	return (
-		<footer className="container flex flex-col gap-2 md:flex-row justify-between mx-auto px-4 py-4 text-neutral-600 text-sm">
-			<p>@2025 Thibault Deverge</p>
-			<p>
+		<footer className="container-custom gap-2 md:flex-row justify-between py-4 text-sm">
+			<p className="text-neutral-600">@2025 Thibault Deverge</p>
+			<p className="text-neutral-600">
 				{t("portfolio")}{" "}
 				<a
 					href="https://github.com/thibault-deverge/portfolio"

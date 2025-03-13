@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
 import { Heading2, Heading3 } from "@/components/ui/heading";
-import { StyledLink } from "@/components/ui/styledLink";
 import { Separator } from "@/components/ui/separator";
 
 export function About() {
@@ -11,7 +10,7 @@ export function About() {
 		<>
 			<section
 				id="about"
-				className="container flex flex-col items-stretch justify-between md:flex-row mx-auto px-4 py-16"
+				className="container-custom items-stretch justify-between md:flex-row py-16"
 			>
 				<Heading2>{t("title")}</Heading2>
 

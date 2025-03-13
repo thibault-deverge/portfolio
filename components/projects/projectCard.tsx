@@ -1,57 +1,41 @@
-import Image from "next/image";
 import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
+import { ProjectType } from "@/data/projects";
 
 import { Separator } from "@/components/ui/separator";
 import { Heading3 } from "@/components/ui/heading";
-import { ProjectType } from "@/data/projects";
+import { ProjectMedia } from "./projectMedia";
+import { ProjectLinks } from "./projectLinks";
 
-import { FaGithub } from "react-icons/fa";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { StyledLink } from "../ui/styledLink";
+type ProjectCardProps = {
+	project: ProjectType;
+};
 
-export function ProjectCard({
-	title_en,
-	title_fr,
-	description_en,
-	description_fr,
-	mediaType,
-	mediaUrl,
-	domain_en,
-	domain_fr,
-	techStack,
-	githubUrl,
-	demoUrl,
-}: ProjectType) {
+export function ProjectCard({ project }: ProjectCardProps) {
 	const t = useTranslations("Projects");
 	const locale = useLocale();
 	const isEnglish = locale === "en";
 
+	const {
+		title_en,
+		title_fr,
+		description_en,
+		description_fr,
+		domain_en,
+		domain_fr,
+		techStack,
+		mediaType,
+		mediaUrl,
+		githubUrl,
+		demoUrl,
+	} = project;
+
 	return (
 		<article className="flex flex-col md:flex-row md:justify-between gap-10 items-center mt-16">
-			<div className="w-full md:w-1/3 max-w-[600px] max-h-[600px] overflow-hidden rounded-md hover:scale-105 transition-all transition-duration-200">
-				{mediaType === "video" ? (
-					<video
-						src={mediaUrl}
-						autoPlay
-						muted
-						loop
-						playsInline
-						className="w-full h-auto object-cover"
-					/>
-				) : (
-					<Image
-						src={mediaUrl}
-						alt={`image of ${title_en}`}
-						width={0}
-						height={0}
-						sizes="(max-width: 768px) 100vw, 50vw"
-						className="w-full h-auto object-cover"
-						priority
-					/>
-				)}
-			</div>
+			{/* Media */}
+			<ProjectMedia mediaType={mediaType} mediaUrl={mediaUrl} title={title_en} />
 
+			{/* Project Informations */}
 			<div className="flex flex-col gap-4 md:w-2/3 text-neutral-50">
 				<Heading3>{isEnglish ? title_en : title_fr}</Heading3>
 				<p className="text-md">{isEnglish ? description_en : description_fr}</p>
@@ -73,17 +57,7 @@ export function ProjectCard({
 					<Separator />
 				</div>
 
-				<div className="mt-4 flex gap-6">
-					<StyledLink href={githubUrl} target="_blank">
-						GitHub <FaGithub className="inline" />
-					</StyledLink>
-
-					{demoUrl && (
-						<StyledLink href={demoUrl} target="_blank">
-							Live Demo <FaArrowUpRightFromSquare className="inline" />
-						</StyledLink>
-					)}
-				</div>
+				<ProjectLinks githubUrl={githubUrl} demoUrl={demoUrl} />
 			</div>
 		</article>
 	);

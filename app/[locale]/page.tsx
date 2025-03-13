@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero/hero";
 import { Projects } from "@/components/projects/projects";
 import { About } from "@/components/about/about";
 import { Contact } from "@/components/contact/contact";
-import { Skills } from "@/components/skills/Skills";
+import { Skills } from "@/components/skills/skills";
 
 export default function Home() {
 	return (

@@ -11,7 +11,7 @@ export function Contact() {
 	return (
 		<section
 			id="contact"
-			className="container flex flex-col lg:flex-row gap-16 lg:gap-0 items-stretch justify-between mx-auto px-4 pt-16 pb-8"
+			className="container-custom lg:flex-row gap-16 lg:gap-0 items-stretch justify-between pt-16 pb-8"
 		>
 			{/* Left Panel - Informations*/}
 			<div className="w-full lg:w-1/3 flex flex-col gap-2">

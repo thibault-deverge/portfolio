@@ -129,6 +129,15 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+	p {
+		@apply text-neutral-100;
+	}
+}
+
+@layer components {
+	.container-custom {
+		@apply container mx-auto px-4 flex flex-col;
+	}
 }
 
 html,

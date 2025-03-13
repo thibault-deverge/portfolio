@@ -10,14 +10,11 @@ export function Projects() {
 
 	return (
 		<>
-			<section
-				id="projects"
-				className="container mx-auto px-4 py-16 flex flex-col items-start"
-			>
+			<section id="projects" className="container-custom py-16 items-start">
 				<Heading2>{t("title")}</Heading2>
 
 				{projects.map((project: ProjectType) => {
-					return <ProjectCard key={project.id} {...project} />;
+					return <ProjectCard key={project.id} project={project} />;
 				})}
 			</section>
 			<Separator />

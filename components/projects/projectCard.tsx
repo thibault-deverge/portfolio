@@ -29,7 +29,7 @@ export function ProjectCard({
 
 	return (
 		<article className="flex flex-col md:flex-row md:justify-between gap-10 items-center mt-16">
-			<div className="w-full md:w-1/3 max-w-[600px] max-h-[600px] overflow-hidden rounded-md">
+			<div className="w-full md:w-1/3 max-w-[600px] max-h-[600px] overflow-hidden rounded-md hover:scale-105 transition-all transition-duration-200">
 				{mediaType === "video" ? (
 					<video
 						src={mediaUrl}

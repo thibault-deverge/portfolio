@@ -27,7 +27,11 @@
 		"paragraph1": "I'm a 29-year-old French fullstack developer driven by curiosity and a commitment to excellence. I earned my law licence with honors at the University of Perpignan in 2018, which instilled in me a disciplined, analytical approach.",
 		"paragraph2": " After law school, I embarked on an unexpected journey across Asia. I hadn't planned to stay long, but I ended up living there for about four years during COVID—especially in Vietnam, where I even crossed the country by motorbike from north to south. During that time, side jobs and coworking spaces introduced me to remote developers and sparked my interest in programming.",
 		"paragraph3": "Back in France, I turned my focus to programming by joining School 42 at the end of 2022, after passing a one-month test. At 42, learning happens through peer collaboration and project-based work working mostly on projects in C and C++, covering Unix, memory management, and other computer science fundamentals. It taught me how to find solutions independently, rely on available online resources and better at troubleshooting on my own.",
-		"paragraph4": "Soon after completing the common core, I started by my own exploring web development deeply — beginning with vanilla CSS/JavaScript and then moving on to Tailwind, Node, Next.js with TypeScript. I&apos;m open to every opportunities, internships, and freelance projects. Outside of coding, I enjoy hiking, cinema, and staying active with sports like badminton, tennis, and gym workouts."
+		"paragraph4": "Soon after completing the common core, I started by my own exploring web development deeply — beginning with vanilla CSS/JavaScript and then moving on to Tailwind, Node, Next.js with TypeScript. I'm open to every opportunities, internships, and freelance projects. Outside of coding, I enjoy hiking, cinema, and staying active with sports like badminton, tennis, and gym workouts."
+	},
+	"Skills": {
+		"title": "Skills",
+		"description": "Curiosity is at the heart of my journey as a lifelong learner. I've gained valuable experience with various technologies, and I'm always eager to discover and master new tools. For now, I have experience with the following technologies:"
 	},
 	"Footer": {
 		"portfolio": "Portfolio available ",

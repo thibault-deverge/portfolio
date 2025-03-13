@@ -28,6 +28,10 @@
 		"paragraph3": "De retour en France, j'ai décidé de me concentrer sur la programmation en rejoignant l'école 42 fin 2022, après avoir passé un test d'un mois. A 42, l'apprentissage se fait par la collaboration entre pairs et le travail par projet. Le tronc commun concerne principalement des projets en C et C++ — couvrant Unix, la gestion de la mémoire et d'autres fondamentaux de l'informatique. Cette approche m'a appris à trouver des solutions de manière autonome et à me fier aux ressources en ligne disponibles. ",
 		"paragraph4": "Peu de temps après avoir terminé le tronc commun, j'ai commencé à explorer par moi-même le développement web — notamment les technologies Javascript frontend/backend et le CSS. Extrêmement motivé, je suis ouvert à toute opportunité, stage ou projet freelance, toujours prêt à apporter des solutions concrètes à vos défis. En dehors du code, j'aime me balader et faire des randonnees, le cinema, notamment les anciens films, ainsi que rester actif avec des sports comme le badminton, le tennis et la musculation."
 	},
+	"Skills": {
+		"title": "Compétences",
+		"description": "La curiosité est au cœur de mon parcours en tant qu'apprenant perpétuel. J'ai acquis une expérience précieuse avec diverses technologies et je suis toujours désireux de découvrir et de maîtriser de nouveaux outils. Pour l'instant, j'ai de l'expérience avec les technologies suivantes :"
+	},
 	"Footer": {
 		"portfolio": "Portfolio disponible ",
 		"link": "ici"

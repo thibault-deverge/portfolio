@@ -34,7 +34,7 @@ export function Navbar() {
 							</SheetTrigger>
 							<SheetContent
 								side="left"
-								className=" w-full h-fit mt-18 bg-neutral-900 opacity-90"
+								className="w-full h-fit mt-18 bg-neutral-900 opacity-90"
 							>
 								<SheetClose className="absolute top-4 right-4 bg-neutral-100 text-neutral-900 hover:bg-neutral-200 p-2 rounded-full">
 									<XIcon size={20} />

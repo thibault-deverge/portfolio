@@ -38,7 +38,7 @@ const manrope = Manrope({
  */
 export const metadata: Metadata = {
 	title: "Thibault Deverge | Portfolio",
-	description: "",
+	description: "Web Fullstack Developper Portfolio of Thibault Deverge",
 };
 
 /*

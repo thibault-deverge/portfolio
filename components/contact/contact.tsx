@@ -30,7 +30,7 @@ export function Contact() {
 				<p className=" mb-4">
 					{t("more_info")}{" "}
 					<a
-						href="#"
+						href="/cv.pdf"
 						download
 						className="text-white border-b border-accent hover:text-lime-400"
 					>

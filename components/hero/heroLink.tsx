@@ -32,7 +32,10 @@ export function HeroLink() {
 			</div>
 
 			<div className="flex gap-3">
-				<SocialIcon href="#" icon={<FaLinkedinIn />} />
+				<SocialIcon
+					href="https://www.linkedin.com/in/thibault-deverge-061724356"
+					icon={<FaLinkedinIn />}
+				/>
 				<SocialIcon href="https://github.com/thibault-deverge" icon={<FaGithub />} />
 			</div>
 		</div>

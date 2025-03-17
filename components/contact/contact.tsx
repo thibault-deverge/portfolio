@@ -39,7 +39,10 @@ export function Contact() {
 				</p>
 
 				<div className="flex gap-4">
-					<SocialIcon href="#" icon={<FaLinkedin />} />
+					<SocialIcon
+						href="https://www.linkedin.com/in/thibault-deverge-061724356"
+						icon={<FaLinkedin />}
+					/>
 					<SocialIcon href="https://github.com/thibault-deverge" icon={<FaGithub />} />
 					<SocialIcon href="https://www.instagram.com/_thibdvg/" icon={<FaInstagram />} />
 				</div>

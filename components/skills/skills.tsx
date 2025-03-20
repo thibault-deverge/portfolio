@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Slide } from "react-awesome-reveal";
 
 import { Heading2 } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
@@ -19,13 +20,15 @@ export function Skills() {
 
 				{/* Right Panel */}
 				<div className="w-full md:w-2/3 flex flex-col gap-8">
-					<p>{t("description")}</p>
+					<Slide triggerOnce direction="right" duration={700}>
+						<p>{t("description")}</p>
 
-					<ul className="flex flex-wrap gap-4">
-						{icons.map((icon) => {
-							return <SkillIcon key={icon.name} icon={icon} />;
-						})}
-					</ul>
+						<ul className="flex flex-wrap gap-4">
+							{icons.map((icon) => {
+								return <SkillIcon key={icon.name} icon={icon} />;
+							})}
+						</ul>
+					</Slide>
 				</div>
 			</section>
 			<Separator />

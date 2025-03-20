@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Slide } from "react-awesome-reveal";
 
 import { ContactForm } from "@/components/contact/contactForm";
 import { Heading2 } from "@/components/ui/heading";
@@ -15,37 +16,42 @@ export function Contact() {
 		>
 			{/* Left Panel - Informations*/}
 			<div className="w-full lg:w-1/3 flex flex-col gap-2">
-				<Heading2>{t("title")}</Heading2>
+				<Slide triggerOnce direction="up" duration={700}>
+					<Heading2>{t("title")}</Heading2>
 
-				<p>
-					{t("email_info")}{" "}
-					<a
-						href="mailto:thibault.deverge@gmail.com"
-						className="text-white border-b border-accent hover:text-lime-400"
-					>
-						thibault.deverge@gmail.com
-					</a>
-				</p>
+					<p>
+						{t("email_info")}{" "}
+						<a
+							href="mailto:thibault.deverge@gmail.com"
+							className="text-white border-b border-accent hover:text-lime-400"
+						>
+							thibault.deverge@gmail.com
+						</a>
+					</p>
 
-				<p className=" mb-4">
-					{t("more_info")}{" "}
-					<a
-						href="/cv.pdf"
-						download
-						className="text-white border-b border-accent hover:text-lime-400"
-					>
-						{t("resume")}
-					</a>
-				</p>
+					<p className=" mb-4">
+						{t("more_info")}{" "}
+						<a
+							href="/cv.pdf"
+							download
+							className="text-white border-b border-accent hover:text-lime-400"
+						>
+							{t("resume")}
+						</a>
+					</p>
 
-				<div className="flex gap-4">
-					<SocialIcon
-						href="https://www.linkedin.com/in/thibault-deverge-061724356"
-						icon={<FaLinkedin />}
-					/>
-					<SocialIcon href="https://github.com/thibault-deverge" icon={<FaGithub />} />
-					<SocialIcon href="https://www.instagram.com/_thibdvg/" icon={<FaInstagram />} />
-				</div>
+					<div className="flex gap-4">
+						<SocialIcon
+							href="https://www.linkedin.com/in/thibault-deverge-061724356"
+							icon={<FaLinkedin />}
+						/>
+						<SocialIcon href="https://github.com/thibault-deverge" icon={<FaGithub />} />
+						<SocialIcon
+							href="https://www.instagram.com/_thibdvg/"
+							icon={<FaInstagram />}
+						/>
+					</div>
+				</Slide>
 			</div>
 
 			{/* Right Panel - Contact Form */}

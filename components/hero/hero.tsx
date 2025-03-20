@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 
 import { Separator } from "@/components/ui/separator";
@@ -16,7 +17,7 @@ export function Hero() {
 					<Heading1>
 						{t("title1")} <br /> Thibault Deverge
 					</Heading1>
-					<p className="md:text-lg">{t("description")}</p>
+					<p className="md:text-xl">{t("description")}</p>
 					<HeroLink />
 				</div>
 
@@ -25,6 +26,7 @@ export function Hero() {
 					<Image src="/images/hero.png" alt="Thibault Deverge" width={650} height={650} />
 				</div>
 			</header>
+
 			<Separator />
 		</>
 	);

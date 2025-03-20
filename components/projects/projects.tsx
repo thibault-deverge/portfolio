@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Slide } from "react-awesome-reveal";
 import { projects, ProjectType } from "@/data/projects";
 
 import { ProjectCard } from "@/components/projects/projectCard";
@@ -14,7 +15,17 @@ export function Projects() {
 				<Heading2>{t("title")}</Heading2>
 
 				{projects.map((project: ProjectType) => {
-					return <ProjectCard key={project.id} project={project} />;
+					return (
+						<Slide
+							key={project.id}
+							fraction={0.35}
+							direction={project.id % 2 === 0 ? "left" : "right"}
+							duration={700}
+							triggerOnce
+						>
+							<ProjectCard project={project} />;
+						</Slide>
+					);
 				})}
 			</section>
 			<Separator />

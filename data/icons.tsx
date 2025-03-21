@@ -28,7 +28,7 @@ export const icons: TypeIcon[] = [
 	},
 
 	{
-		name: "Javascript",
+		name: "JS",
 		Component: JavascriptIcon,
 	},
 	{

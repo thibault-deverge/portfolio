@@ -12,7 +12,7 @@ export function Navbar() {
 	const t = useTranslations("Navbar");
 
 	return (
-		<nav className="flex h-19 bg-neutral-900 text-neutral-100 px-1">
+		<nav className="flex h-19 lg:h-[13vh] bg-neutral-900 text-neutral-100 px-1">
 			<div className="container mx-auto h-full flex justify-between items-center">
 				{/* Left side: Logo */}
 				<Logo />

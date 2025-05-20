@@ -27,8 +27,7 @@ export const projects: ProjectType[] = [
 		mediaUrl: "/images/finance_app.png",
 		domain_en: "Personal Finance Management",
 		domain_fr: "Gestion de Finance Personnelle",
-		techStack:
-			"Next.js 15, TypeScript, TailwindCSS, Prisma ORM, PostgreSQL (NeonDB), shadcn/ui, Jest, Auth.js",
+		techStack: "Next.js 15, TypeScript, TailwindCSS, Prisma ORM, Auth.js",
 		githubUrl: "https://github.com/thibault-deverge/finance_app",
 		demoUrl: "https://finance-app-peach-five.vercel.app",
 	},

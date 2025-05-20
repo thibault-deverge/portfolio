@@ -15,7 +15,21 @@ export type ProjectType = {
 
 export const projects = [
 	{
-		id: 1,
+		"id": 2,
+		"title_en": "Personal Finance App: Budgeting, Transactions & Recurring Bills",
+		"title_fr": "Application de Finance Personnelle : Budgets, Transactions & Factures Récurrentes",
+		"description_en": "A full-stack personal finance dashboard built with Next.js 15, Auth.js TypeScript, TailwindCSS, Prisma and NeonDB. Features include transaction pagination, search/sort/filter, CRUD budgets & saving pots, progress tracking, recurring bills overview and avatar upload.",
+		"description_fr": "Tableau de bord finance personnelle full-stack réalisé avec Next.js 15, Auth.js TypeScript, TailwindCSS, Prisma et NeonDB. Comprend pagination des transactions, recherche/tri/filtre, CRUD pour budgets & cagnotte, suivi de progression, factures récurrentes et upload d’avatar.",
+		"mediaType": "image",
+		"mediaUrl": "/images/finance_app.png",
+		"domain_en": "Personal Finance Management",
+		"domain_fr": "Gestion de Finance Personnelle",
+		"techStack": "Next.js 15, TypeScript, TailwindCSS, Prisma ORM, PostgreSQL (NeonDB), shadcn/ui, Jest, Auth.js",
+		"githubUrl": "https://github.com/thibault-deverge/finance_app",
+		"demoUrl": "https://finance-app-peach-five.vercel.app"
+	  }
+	{
+		id: 2,
 		title_en: "ft_transcendence : A Real-Time Multiplayer Pong Web Application",
 		title_fr: "ft_transcendence : Une application web de Pong multijoueur en temps réel",
 		description_en:
@@ -31,7 +45,7 @@ export const projects = [
 		demoUrl: "https://ft-transcendence.pro/dashboard",
 	},
 	{
-		id: 2,
+		id: 3,
 		title_en: "Cub3D: A First-Person 3D Maze Exploration Game",
 		title_fr: "Cub3D : Un jeu d'exploration 3D à la première personne",
 		description_en:
@@ -47,7 +61,7 @@ export const projects = [
 		demoUrl: "",
 	},
 	{
-		id: 3,
+		id: 4,
 		title_en: "Minishell: An Unix Shell",
 		title_fr: "Minishell : Un shell Unix",
 		description_en:

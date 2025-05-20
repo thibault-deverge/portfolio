@@ -13,9 +13,9 @@ export type ProjectType = {
 	demoUrl: string;
 };
 
-export const projects = [
+export const projects: ProjectType[] = [
 	{
-		id: 2,
+		id: 1,
 		title_en: "Personal Finance App: Budgeting, Transactions & Recurring Bills",
 		title_fr:
 			"Application de Finance Personnelle : Budgets, Transactions & Factures Récurrentes",
